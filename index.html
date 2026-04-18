@@ -1,623 +1,107 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Buildcon International Expo Series</title>
   <style>
-    html, body {
-      margin: 0 !important;
-      padding: 0 !important;
-      width: 100% !important;
-      background: #edf1f4;
-    }
-    * {
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-      box-sizing: border-box;
-    }
-    table {
-      border-collapse: collapse !important;
-      border-spacing: 0 !important;
-      mso-table-lspace: 0pt !important;
-      mso-table-rspace: 0pt !important;
-    }
-    img {
-      border: 0;
-      outline: none;
-      text-decoration: none;
-      display: block;
-      max-width: 100%;
-      height: auto;
-      -ms-interpolation-mode: bicubic;
-    }
-    a { text-decoration: none; }
-    .bg {
-      width: 100%;
-      background: #edf1f4;
-      padding: 28px 0;
-    }
-    .container {
-      width: 100%;
-      max-width: 780px;
-      margin: 0 auto;
-      background: #ffffff;
-      border: 1px solid #d6dde3;
-    }
-    .hero {
-      background:
-        radial-gradient(circle at top right, rgba(218,177,101,0.24), rgba(218,177,101,0.00) 36%),
-        linear-gradient(135deg, #1e2a33 0%, #2d3b45 55%, #162128 100%);
-    }
-    .eyebrow {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-      line-height: 12px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #d9b26b;
-      font-weight: 700;
-    }
-    .headline {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 36px;
-      line-height: 43px;
-      color: #ffffff;
-      font-weight: 800;
-      margin: 0;
-    }
-    .subhead {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 17px;
-      line-height: 28px;
-      color: #e2ebef;
-      margin: 0;
-    }
-    .pill {
-      display: inline-block;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-      line-height: 12px;
-      color: #24343f;
-      background: #ffffff;
-      border-radius: 999px;
-      padding: 10px 12px;
-      margin: 0 8px 8px 0;
-      text-transform: none;
-      letter-spacing: 0;
-      font-weight: 700;
-    }
-    .section-title {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 27px;
-      line-height: 33px;
-      color: #1b2832;
-      font-weight: 800;
-      margin: 0;
-    }
-    .section-copy {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 27px;
-      color: #4c5d69;
-      margin: 0;
-    }
-    .premium-note {
-      background: #f8fafb;
-      border: 1px solid #dde5ea;
-      border-left: 4px solid #d9b26b;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 15px;
-      line-height: 24px;
-      color: #465560;
-    }
-    .metric {
-      background: #f8fafb;
-      border: 1px solid #dde5ea;
-      border-radius: 16px;
-    }
-    .metric-num {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 28px;
-      line-height: 30px;
-      color: #9a6b2e;
-      font-weight: 800;
-    }
-    .metric-label {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      line-height: 18px;
-      color: #4e606c;
-      font-weight: 700;
-    }
-    .card {
-      background: #ffffff;
-      border: 1px solid #dde5ea;
-      border-radius: 18px;
-      overflow: hidden;
-    }
-    .logo-wrap {
-      background: #f4f7f9;
-      border-bottom: 1px solid #dde5ea;
-      padding: 20px 18px;
-      height: 150px;
-    }
-    .logo {
-      width: 100%;
-      max-width: 300px;
-      max-height: 110px;
-      margin: 0 auto;
-      object-fit: contain;
-      object-position: center center;
-    }
-    .country {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      line-height: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1.7px;
-      color: #9a6b2e;
-      font-weight: 800;
-    }
-    .expo-title {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 22px;
-      line-height: 28px;
-      color: #1c2933;
-      font-weight: 800;
-      margin: 0;
-    }
-    .meta-label {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11px;
-      line-height: 14px;
-      color: #7b8b96;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 700;
-    }
-    .meta-value {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 17px;
-      line-height: 24px;
-      color: #1f2d37;
-      font-weight: 800;
-    }
-    .body-copy {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 23px;
-      color: #52636f;
-      margin: 0;
-    }
-    .feature {
-      background: #f8fafb;
-      border: 1px solid #dde5ea;
-      border-radius: 14px;
-    }
-    .feature-title {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 22px;
-      color: #1b2832;
-      font-weight: 800;
-      margin: 0 0 6px 0;
-    }
-    .feature-copy {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 22px;
-      color: #4f606c;
-      margin: 0;
-    }
-    .chip {
-      display: inline-block;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      line-height: 18px;
-      color: #24343f;
-      background: #f6f9fb;
-      border: 1px solid #dde5ea;
-      border-radius: 999px;
-      padding: 9px 13px;
-      margin: 0 8px 10px 0;
-      font-weight: 700;
-    }
-    .cta {
-      background:
-        radial-gradient(circle at top right, rgba(217,178,107,0.24), rgba(217,178,107,0.00) 35%),
-        linear-gradient(135deg, #24323c 0%, #1a252d 100%);
-      border: 1px solid #c9a565;
-      border-radius: 18px;
-    }
-    .cta-title {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 28px;
-      line-height: 34px;
-      color: #ffffff;
-      font-weight: 800;
-      margin: 0;
-    }
-    .cta-copy {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 17px;
-      line-height: 28px;
-      color: #ecf2f5;
-      margin: 0;
-    }
-    .reply-chip {
-      display: inline-block;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      line-height: 13px;
-      color: #ffffff;
-      background: #9a6b2e;
-      border-radius: 999px;
-      padding: 11px 15px;
-      margin: 0 8px 10px 0;
-      text-transform: none;
-      letter-spacing: 0;
-      font-weight: 800;
-    }
-    .footer {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      line-height: 22px;
-      color: #6f7f8b;
-    }
-    .half { width: 50%; }
-
-    @media screen and (max-width: 640px) {
-      .container { width: 100% !important; }
-      .mobile-pad {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-      }
-      .headline {
-        font-size: 30px !important;
-        line-height: 36px !important;
-      }
-      .subhead {
-        font-size: 16px !important;
-        line-height: 26px !important;
-      }
-      .section-title {
-        font-size: 23px !important;
-        line-height: 29px !important;
-      }
-      .half {
-        display: block !important;
-        width: 100% !important;
-      }
-      .logo-wrap {
-        height: 140px !important;
-      }
-    }
+    body{margin:0;background:#edf1f4;font-family:Arial,Helvetica,sans-serif;color:#23323c}
+    .wrap{max-width:780px;margin:0 auto;background:#fff;border:1px solid #d7dee4}
+    .hero{padding:38px 36px;background:linear-gradient(135deg,#1f2b34 0%,#2f3d47 55%,#162128 100%)}
+    .eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#d9b26b;font-weight:700}
+    h1{margin:14px 0;color:#fff;font-size:36px;line-height:1.2}
+    .sub{color:#e5edf1;font-size:17px;line-height:1.7;margin:0}
+    .pills span{display:inline-block;background:#fff;color:#24343f;padding:10px 12px;border-radius:999px;margin:14px 8px 0 0;font-size:12px;font-weight:700}
+    .pad{padding:0 36px}
+    .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:18px 36px 6px}
+    .metric{background:#f8fafb;border:1px solid #dde5ea;border-radius:16px;padding:18px}
+    .metric strong{display:block;color:#9a6b2e;font-size:28px}
+    .metric span{font-size:13px;color:#4e606c;font-weight:700}
+    .note{margin:8px 36px 22px;background:#f8fafb;border:1px solid #dde5ea;border-left:4px solid #d9b26b;padding:15px 16px;color:#465560;line-height:1.6}
+    h2{font-size:27px;line-height:1.25;margin:0 0 10px;color:#1b2832}
+    p{font-size:16px;line-height:1.7;color:#4c5d69;margin:0}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:6px 36px 4px}
+    .feature,.card{background:#fff;border:1px solid #dde5ea;border-radius:16px;overflow:hidden}
+    .feature{background:#f8fafb;padding:18px}
+    .feature h3{margin:0 0 6px;font-size:16px;color:#1b2832}
+    .feature p{font-size:14px;line-height:1.6}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;padding:0 36px 0}
+    .logo-wrap{background:#f4f7f9;border-bottom:1px solid #dde5ea;padding:18px;height:150px;display:flex;align-items:center;justify-content:center}
+    .logo-wrap img{max-width:100%;max-height:110px}
+    .card-body{padding:18px}
+    .country{font-size:13px;letter-spacing:1.7px;text-transform:uppercase;color:#9a6b2e;font-weight:800}
+    .expo{font-size:22px;line-height:1.3;color:#1c2933;font-weight:800;margin:6px 0 14px}
+    .label{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#7b8b96;font-weight:700}
+    .value{font-size:17px;line-height:1.5;color:#1f2d37;font-weight:800;margin:0 0 12px}
+    .value.small{font-size:14px;color:#52636f;font-weight:400}
+    .chips{padding-top:14px}
+    .chips span{display:inline-block;background:#f6f9fb;border:1px solid #dde5ea;color:#24343f;border-radius:999px;padding:9px 13px;margin:0 8px 10px 0;font-size:13px;font-weight:700}
+    .cta{margin:16px 36px 30px;background:linear-gradient(135deg,#24323c 0%,#1a252d 100%);border:1px solid #c9a565;border-radius:18px;padding:26px 24px}
+    .cta h2{color:#fff}
+    .cta p{color:#ecf2f5}
+    .reply span{display:inline-block;background:#9a6b2e;color:#fff;border-radius:999px;padding:11px 15px;margin:0 8px 10px 0;font-size:13px;font-weight:800}
+    .footer{padding:0 36px 30px;color:#6f7f8b;font-size:13px;line-height:1.7}
+    @media(max-width:640px){.metrics,.features,.cards{grid-template-columns:1fr}.hero,.pad,.footer,.cta,.cards,.features{padding-left:20px;padding-right:20px}.metrics{padding-left:20px;padding-right:20px}.note{margin-left:20px;margin-right:20px}h1{font-size:30px}}
   </style>
 </head>
 <body>
-  <center class="bg">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg">
-      <tr>
-        <td align="center">
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="container">
-            <tr>
-              <td class="hero mobile-pad" style="padding:36px 36px 28px 36px;">
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <td style="padding-bottom:14px;"><div class="eyebrow">Buildcon International Expo Series</div></td>
-                  </tr>
-                  <tr>
-                    <td style="padding-bottom:14px;"><h1 class="headline">A Premium Gateway to 5 High-Potential Building and Construction Markets</h1></td>
-                  </tr>
-                  <tr>
-                    <td style="padding-bottom:18px;"><p class="subhead">Created for established industry brands, manufacturers, exporters, solution providers, and project-focused suppliers looking to strengthen visibility across <strong style="color:#ffffff;">Kenya, Uganda, Bangladesh, Sri Lanka, and Nepal</strong> through focused B2B exhibition participation.</p></td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span class="pill">Construction & Building Materials</span>
-                      <span class="pill">B2B Market Access</span>
-                      <span class="pill">Regional Industry Visibility</span>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+  <div class="wrap">
+    <div class="hero">
+      <div class="eyebrow">Buildcon International Expo Series</div>
+      <h1>A Premium Gateway to 5 High-Potential Building and Construction Markets</h1>
+      <p class="sub">Created for established industry brands, manufacturers, exporters, solution providers, and project-focused suppliers looking to strengthen visibility across <strong>Kenya, Uganda, Bangladesh, Sri Lanka, and Nepal</strong> through focused B2B exhibition participation.</p>
+      <div class="pills"><span>Construction &amp; Building Materials</span><span>B2B Market Access</span><span>Regional Industry Visibility</span></div>
+    </div>
 
-            <tr>
-              <td class="mobile-pad" style="padding:0 36px 14px 36px;">
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <td class="half" style="padding:0 8px 12px 0;">
-                      <table role="presentation" width="100%" class="metric">
-                        <tr><td style="padding:18px;">
-                          <div class="metric-num">5</div>
-                          <div class="metric-label">International B2B Exhibitions</div>
-                        </td></tr>
-                      </table>
-                    </td>
-                    <td class="half" style="padding:0 0 12px 8px;">
-                      <table role="presentation" width="100%" class="metric">
-                        <tr><td style="padding:18px;">
-                          <div class="metric-num">2</div>
-                          <div class="metric-label">Strategic Growth Regions</div>
-                        </td></tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="half" style="padding:0 8px 12px 0;">
-                      <table role="presentation" width="100%" class="metric">
-                        <tr><td style="padding:18px;">
-                          <div class="metric-num">Focused</div>
-                          <div class="metric-label">Trade-Oriented Audience</div>
-                        </td></tr>
-                      </table>
-                    </td>
-                    <td class="half" style="padding:0 0 12px 8px;">
-                      <table role="presentation" width="100%" class="metric">
-                        <tr><td style="padding:18px;">
-                          <div class="metric-num">Premium</div>
-                          <div class="metric-label">Exhibitor Positioning Opportunity</div>
-                        </td></tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+    <div class="metrics">
+      <div class="metric"><strong>5</strong><span>International B2B Exhibitions</span></div>
+      <div class="metric"><strong>2</strong><span>Strategic Growth Regions</span></div>
+      <div class="metric"><strong>Focused</strong><span>Trade-Oriented Audience</span></div>
+      <div class="metric"><strong>Premium</strong><span>Exhibitor Positioning Opportunity</span></div>
+    </div>
 
-            <tr>
-              <td class="mobile-pad" style="padding:2px 36px 22px 36px;">
-                <table role="presentation" width="100%" class="premium-note">
-                  <tr>
-                    <td style="padding:15px 16px;">
-                      As a respected player in the building and construction industry, your company is among the kind of brands this showcase is designed for — brands that influence product selection, project execution, market movement, and industry direction.
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+    <div class="note">As a respected player in the building and construction industry, your company is among the kind of brands this showcase is designed for — brands that influence product selection, project execution, market movement, and industry direction.</div>
 
-            <tr>
-              <td class="mobile-pad" style="padding:0 36px 12px 36px;">
-                <h2 class="section-title" style="padding-bottom:10px;">Why This Series Is Relevant for Exhibitors</h2>
-                <p class="section-copy">This combined exhibition lineup brings together multiple fast-developing construction markets under one premium communication. It offers a strong platform for business development, distributor and dealer engagement, product visibility, export exploration, project supply conversations, and market expansion across key regional economies.</p>
-              </td>
-            </tr>
+    <div class="pad">
+      <h2>Why This Series Is Relevant for Exhibitors</h2>
+      <p>This combined exhibition lineup brings together multiple fast-developing construction markets under one premium communication. It offers a strong platform for business development, distributor and dealer engagement, product visibility, export exploration, project supply conversations, and market expansion across key regional economies.</p>
+    </div>
 
-            <tr>
-              <td class="mobile-pad" style="padding:6px 36px 10px 36px;">
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <td class="half" valign="top" style="padding:0 8px 12px 0;">
-                      <table role="presentation" width="100%" class="feature">
-                        <tr><td style="padding:18px;">
-                          <p class="feature-title">Connect with Industry Decision-Makers</p>
-                          <p class="feature-copy">Meet importers, distributors, dealers, contractors, architects, consultants, developers, builders, engineers, project buyers, and procurement professionals.</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                    <td class="half" valign="top" style="padding:0 0 12px 8px;">
-                      <table role="presentation" width="100%" class="feature">
-                        <tr><td style="padding:18px;">
-                          <p class="feature-title">Support Market Entry and Expansion</p>
-                          <p class="feature-copy">A practical route for brands evaluating regional growth, export development, dealer network expansion, and new market visibility.</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="half" valign="top" style="padding:0 8px 12px 0;">
-                      <table role="presentation" width="100%" class="feature">
-                        <tr><td style="padding:18px;">
-                          <p class="feature-title">Present Products in a Trade-Led Setting</p>
-                          <p class="feature-copy">Suitable for launching or showcasing materials, machinery, electricals, systems, surfaces, interior products, structural solutions, and smart technologies.</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                    <td class="half" valign="top" style="padding:0 0 12px 8px;">
-                      <table role="presentation" width="100%" class="feature">
-                        <tr><td style="padding:18px;">
-                          <p class="feature-title">Strengthen Premium Brand Positioning</p>
-                          <p class="feature-copy">Build stronger recall and industry presence in markets where trade relationships, project influence, and product visibility matter.</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+    <div class="features">
+      <div class="feature"><h3>Connect with Industry Decision-Makers</h3><p>Meet importers, distributors, dealers, contractors, architects, consultants, developers, builders, engineers, project buyers, and procurement professionals.</p></div>
+      <div class="feature"><h3>Support Market Entry and Expansion</h3><p>A practical route for brands evaluating regional growth, export development, dealer network expansion, and new market visibility.</p></div>
+      <div class="feature"><h3>Present Products in a Trade-Led Setting</h3><p>Suitable for launching or showcasing materials, machinery, electricals, systems, surfaces, interior products, structural solutions, and smart technologies.</p></div>
+      <div class="feature"><h3>Strengthen Premium Brand Positioning</h3><p>Build stronger recall and industry presence in markets where trade relationships, project influence, and product visibility matter.</p></div>
+    </div>
 
-            <tr>
-              <td class="mobile-pad" style="padding:10px 36px 14px 36px;">
-                <h2 class="section-title" style="padding-bottom:10px;">Upcoming Exhibition Calendar</h2>
-                <p class="section-copy">A clear country-wise presentation of the Buildcon exhibitions for your review.</p>
-              </td>
-            </tr>
+    <div class="pad" style="padding-top:10px;padding-bottom:14px">
+      <h2>Upcoming Exhibition Calendar</h2>
+      <p>A clear country-wise presentation of the Buildcon exhibitions for your review.</p>
+    </div>
 
-            <tr>
-              <td class="mobile-pad" style="padding:0 36px 0 36px;">
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <td class="half" valign="top" style="padding:0 8px 16px 0;">
-                      <table role="presentation" width="100%" class="card">
-                        <tr><td class="logo-wrap"><img src="REPLACEME_KENYA" alt="Kenya Buildcon International Expo" class="logo"></td></tr>
-                        <tr><td style="padding:18px;">
-                          <div class="country">Kenya</div>
-                          <p class="expo-title" style="padding:6px 0 14px 0;">Kenya Buildcon International Expo</p>
-                          <div class="meta-label">Edition</div>
-                          <div class="meta-value" style="padding-bottom:12px;">3rd Edition</div>
-                          <div class="meta-label">Date</div>
-                          <div class="meta-value" style="padding-bottom:12px;">11 to 13 June 2026</div>
-                          <div class="meta-label">Venue</div>
-                          <p class="body-copy">The Sarit Expo Centre, Nairobi, Kenya</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                    <td class="half" valign="top" style="padding:0 0 16px 8px;">
-                      <table role="presentation" width="100%" class="card">
-                        <tr><td class="logo-wrap"><img src="REPLACEME_UGANDA" alt="Uganda Buildcon International Expo" class="logo"></td></tr>
-                        <tr><td style="padding:18px;">
-                          <div class="country">Uganda</div>
-                          <p class="expo-title" style="padding:6px 0 14px 0;">Uganda Buildcon International Expo</p>
-                          <div class="meta-label">Edition</div>
-                          <div class="meta-value" style="padding-bottom:12px;">5th Edition</div>
-                          <div class="meta-label">Date</div>
-                          <div class="meta-value" style="padding-bottom:12px;">6 to 8 August 2026</div>
-                          <div class="meta-label">Venue</div>
-                          <p class="body-copy">UMA Show Grounds, Kampala, Uganda</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                  </tr>
+    <div class="cards">
+      <div class="card"><div class="logo-wrap"><img src="kenya-logo.svg" alt="Kenya Buildcon"></div><div class="card-body"><div class="country">Kenya</div><div class="expo">Kenya Buildcon International Expo</div><div class="label">Edition</div><div class="value">3rd Edition</div><div class="label">Date</div><div class="value">11 to 13 June 2026</div><div class="label">Venue</div><div class="value small">The Sarit Expo Centre, Nairobi, Kenya</div></div></div>
+      <div class="card"><div class="logo-wrap"><img src="uganda-logo.svg" alt="Uganda Buildcon"></div><div class="card-body"><div class="country">Uganda</div><div class="expo">Uganda Buildcon International Expo</div><div class="label">Edition</div><div class="value">5th Edition</div><div class="label">Date</div><div class="value">6 to 8 August 2026</div><div class="label">Venue</div><div class="value small">UMA Show Grounds, Kampala, Uganda</div></div></div>
+      <div class="card"><div class="logo-wrap"><img src="bangladesh-logo.svg" alt="Bangladesh Buildcon"></div><div class="card-body"><div class="country">Bangladesh</div><div class="expo">Bangladesh Buildcon International Expo</div><div class="label">Edition</div><div class="value">10th Edition</div><div class="label">Date</div><div class="value">17 to 19 September 2026</div><div class="label">Venue</div><div class="value small">ICCB Exhibition Hall, Dhaka, Bangladesh</div></div></div>
+      <div class="card"><div class="logo-wrap"><img src="srilanka-logo.svg" alt="Sri Lanka Buildcon"></div><div class="card-body"><div class="country">Sri Lanka</div><div class="expo">Sri Lanka Buildcon International Expo</div><div class="label">Edition</div><div class="value">9th Edition</div><div class="label">Date</div><div class="value">27 to 29 November 2026</div><div class="label">Venue</div><div class="value small">BMICH, Colombo, Sri Lanka</div></div></div>
+      <div class="card"><div class="logo-wrap"><img src="nepal-logo.svg" alt="Nepal Buildcon"></div><div class="card-body"><div class="country">Nepal</div><div class="expo">Nepal Buildcon International Expo</div><div class="label">Edition</div><div class="value">12th Edition</div><div class="label">Date</div><div class="value">25 to 28 February 2027</div><div class="label">Venue</div><div class="value small">Bhrikuti Mandap, Kathmandu, Nepal</div></div></div>
+      <div class="card"><div class="card-body"><div class="country">Exhibitor Perspective</div><div class="expo">A Suitable Platform for Brands That Want Meaningful Market Conversations</div><div class="label">Relevant Objectives</div><div class="value small">Brand reinforcement, export enquiries, dealer and distributor networking, product introduction, project supply engagement, and long-term market development.</div></div></div>
+    </div>
 
-                  <tr>
-                    <td class="half" valign="top" style="padding:0 8px 16px 0;">
-                      <table role="presentation" width="100%" class="card">
-                        <tr><td class="logo-wrap"><img src="REPLACEME_BANGLADESH" alt="Bangladesh Buildcon International Expo" class="logo"></td></tr>
-                        <tr><td style="padding:18px;">
-                          <div class="country">Bangladesh</div>
-                          <p class="expo-title" style="padding:6px 0 14px 0;">Bangladesh Buildcon International Expo</p>
-                          <div class="meta-label">Edition</div>
-                          <div class="meta-value" style="padding-bottom:12px;">10th Edition</div>
-                          <div class="meta-label">Date</div>
-                          <div class="meta-value" style="padding-bottom:12px;">17 to 19 September 2026</div>
-                          <div class="meta-label">Venue</div>
-                          <p class="body-copy">ICCB Exhibition Hall, Dhaka, Bangladesh</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                    <td class="half" valign="top" style="padding:0 0 16px 8px;">
-                      <table role="presentation" width="100%" class="card">
-                        <tr><td class="logo-wrap"><img src="REPLACEME_SRILANKA" alt="Sri Lanka Buildcon International Expo" class="logo"></td></tr>
-                        <tr><td style="padding:18px;">
-                          <div class="country">Sri Lanka</div>
-                          <p class="expo-title" style="padding:6px 0 14px 0;">Sri Lanka Buildcon International Expo</p>
-                          <div class="meta-label">Edition</div>
-                          <div class="meta-value" style="padding-bottom:12px;">9th Edition</div>
-                          <div class="meta-label">Date</div>
-                          <div class="meta-value" style="padding-bottom:12px;">27 to 29 November 2026</div>
-                          <div class="meta-label">Venue</div>
-                          <p class="body-copy">BMICH, Colombo, Sri Lanka</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                  </tr>
+    <div class="pad" style="padding-top:8px;padding-bottom:12px">
+      <h2>Key Exhibitor Categories</h2>
+      <p>Relevant for companies across the building, construction, infrastructure, interiors, engineering, and allied product ecosystem.</p>
+      <div class="chips"><span>Building Materials</span><span>Construction Equipment &amp; Machinery</span><span>Electrical, Lighting &amp; Power</span><span>HVAC &amp; MEP Solutions</span><span>Tools &amp; Hardware</span><span>Steel, Cement &amp; Structural Products</span><span>Tiles, Sanitaryware &amp; Plumbing</span><span>Roofing, Façade, Glass, Doors &amp; Windows</span><span>Paints, Coatings, Adhesives &amp; Chemicals</span><span>Interiors, Surfaces &amp; Finishes</span><span>Smart Building &amp; Energy Solutions</span><span>Safety, Security &amp; Allied Products</span></div>
+    </div>
 
-                  <tr>
-                    <td class="half" valign="top" style="padding:0 8px 16px 0;">
-                      <table role="presentation" width="100%" class="card">
-                        <tr><td class="logo-wrap"><img src="REPLACEME_NEPAL" alt="Nepal Buildcon International Expo" class="logo"></td></tr>
-                        <tr><td style="padding:18px;">
-                          <div class="country">Nepal</div>
-                          <p class="expo-title" style="padding:6px 0 14px 0;">Nepal Buildcon International Expo</p>
-                          <div class="meta-label">Edition</div>
-                          <div class="meta-value" style="padding-bottom:12px;">12th Edition</div>
-                          <div class="meta-label">Date</div>
-                          <div class="meta-value" style="padding-bottom:12px;">25 to 28 February 2027</div>
-                          <div class="meta-label">Venue</div>
-                          <p class="body-copy">Bhrikuti Mandap, Kathmandu, Nepal</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                    <td class="half" valign="top" style="padding:0 0 16px 8px;">
-                      <table role="presentation" width="100%" class="card">
-                        <tr><td style="padding:24px 18px 18px 18px; background:#f8fafb;">
-                          <div class="country">Exhibitor Perspective</div>
-                          <p class="expo-title" style="padding:6px 0 12px 0;">A Suitable Platform for Brands That Want Meaningful Market Conversations</p>
-                          <p class="body-copy">The series is relevant for companies prioritizing product visibility, trade engagement, channel development, and premium positioning within the construction industry.</p>
-                        </td></tr>
-                        <tr><td style="padding:18px;">
-                          <div class="meta-label">Relevant Objectives</div>
-                          <p class="body-copy">Brand reinforcement, export enquiries, dealer and distributor networking, product introduction, project supply engagement, and long-term market development.</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+    <div class="cta">
+      <h2>Request Exhibition Information</h2>
+      <p>If any of these exhibitions are relevant to your business, simply reply to this email to receive the required details.</p>
+      <div class="reply" style="padding-top:14px"><span>Kenya</span><span>Uganda</span><span>Bangladesh</span><span>Sri Lanka</span><span>Nepal</span></div>
+      <p style="margin-top:6px">Brochure, participation details, and further information can be shared on request.</p>
+    </div>
 
-            <tr>
-              <td class="mobile-pad" style="padding:8px 36px 12px 36px;">
-                <h2 class="section-title" style="padding-bottom:10px;">Key Exhibitor Categories</h2>
-                <p class="section-copy" style="padding-bottom:14px;">Relevant for companies across the building, construction, infrastructure, interiors, engineering, and allied product ecosystem.</p>
-                <div>
-                  <span class="chip">Building Materials</span>
-                  <span class="chip">Construction Equipment & Machinery</span>
-                  <span class="chip">Electrical, Lighting & Power</span>
-                  <span class="chip">HVAC & MEP Solutions</span>
-                  <span class="chip">Tools & Hardware</span>
-                  <span class="chip">Steel, Cement & Structural Products</span>
-                  <span class="chip">Tiles, Sanitaryware & Plumbing</span>
-                  <span class="chip">Roofing, Façade, Glass, Doors & Windows</span>
-                  <span class="chip">Paints, Coatings, Adhesives & Chemicals</span>
-                  <span class="chip">Interiors, Surfaces & Finishes</span>
-                  <span class="chip">Smart Building & Energy Solutions</span>
-                  <span class="chip">Safety, Security & Allied Products</span>
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="mobile-pad" style="padding:10px 36px 12px 36px;">
-                <h2 class="section-title" style="padding-bottom:10px;">What Makes This Outreach Relevant</h2>
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <td class="half" valign="top" style="padding:0 8px 12px 0;">
-                      <table role="presentation" width="100%" class="feature">
-                        <tr><td style="padding:18px;">
-                          <p class="feature-title">Industry-First Communication</p>
-                          <p class="feature-copy">This communication is intended for companies that already hold relevance in the building and construction trade and can benefit from direct market-facing participation.</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                    <td class="half" valign="top" style="padding:0 0 12px 8px;">
-                      <table role="presentation" width="100%" class="feature">
-                        <tr><td style="padding:18px;">
-                          <p class="feature-title">Business-Led Opportunity</p>
-                          <p class="feature-copy">The focus is not just visibility, but conversations that can support business expansion, category growth, and stronger market presence.</p>
-                        </td></tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="mobile-pad" style="padding:16px 36px 30px 36px;">
-                <table role="presentation" width="100%" class="cta">
-                  <tr>
-                    <td style="padding:26px 24px;">
-                      <h2 class="cta-title" style="padding-bottom:10px;">Request Exhibition Information</h2>
-                      <p class="cta-copy" style="padding-bottom:16px;">If any of these exhibitions are relevant to your business, simply reply to this email to receive the required details.</p>
-                      <div style="padding-bottom:8px;">
-                        <span class="reply-chip">Kenya</span>
-                        <span class="reply-chip">Uganda</span>
-                        <span class="reply-chip">Bangladesh</span>
-                        <span class="reply-chip">Sri Lanka</span>
-                        <span class="reply-chip">Nepal</span>
-                      </div>
-                      <p class="feature-copy" style="color:#eef3f6; margin:0;">Brochure, participation details, and further information can be shared on request.</p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="mobile-pad" style="padding:0 36px 30px 36px;">
-                <div class="footer">You are receiving this invitation because your company represents the kind of quality, relevance, and market presence that aligns well with this international construction-focused exhibition series.</div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </center>
+    <div class="footer">You are receiving this invitation because your company represents the kind of quality, relevance, and market presence that aligns well with this international construction-focused exhibition series.</div>
+  </div>
 </body>
 </html>
